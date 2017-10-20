@@ -1,0 +1,11 @@
+/*This is a practice program*/
+#include <stdio.h>
+#include <math.h>
+
+int main{
+int input;
+int inputx;
+printf("Please type your first input here:");
+scanf("%d", input);
+printf("\nPlease type your first input here:");
+scanf("%d", inputx);
