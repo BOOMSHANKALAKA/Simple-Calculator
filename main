@@ -1,11 +1,43 @@
 /*This is a practice program*/
+/*This program was editted on Jan 1st, 2018*/
+/*Happy New Year!!!*/
+
 #include <stdio.h>
 #include <math.h>
 
-int main{
-int input;
-int inputx;
-printf("Please type your first input here:");
-scanf("%d", input);
-printf("\nPlease type your first input here:");
-scanf("%d", inputx);
+int main(){
+
+    char operator;
+    double number,numberx;
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &operator);
+
+    printf("Enter two operands: ");
+    scanf("%lf %lf",&number, &numberx);
+
+    switch(operator)
+    {
+        case '+':
+            printf("%.1lf + %.1lf = %.1lf",number, numberx, number + numberx);
+            break;
+
+        case '-':
+            printf("%.1lf - %.1lf = %.1lf",number, numberx, number - numberx);
+            break;
+
+        case '*':
+            printf("%.1lf * %.1lf = %.1lf",number, numberx, number * numberx);
+            break;
+
+        case '/':
+            printf("%.1lf / %.1lf = %.1lf",number, numberx, number / numberx);
+            break;
+
+        // if the operator does not match any given constant
+        default:
+            printf("Error! Please check the operator.");
+    }
+    
+    return 0;
+}
